@@ -24,31 +24,22 @@ while prime == None:
     else:
         prime = None
 
-a = "01"
-b = "02"
-c = "03"
-d = "04"
-e = "05"
-f = "06"
-g = "07"
-h = "08"
-i = "09"
-j = "10"
-k = "11"
-l = "12"
-m = "13"
-n = "14"
-o = "15"
-p = "16"
-q = "17"
-r = "18"
-s = "19"
-t = "20"
-u = "21"
-v = "22"
-w = "23"
-x = "24"
-y = "25"
-x = "26"
 
-code
+
+code = str(input(print("Please type your message. Leave one (1) space between each character, and disregard punctuation. ")
+code_list = code.split()
+
+i = 0 
+code_list.append("counter")
+while code_list[i] != "counter":
+    i = i + 1
+code_list.remove("counter")
+print(code_list)
+print(i)
+
+
+
+
+
+
+                 
