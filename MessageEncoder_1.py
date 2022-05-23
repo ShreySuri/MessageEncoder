@@ -36,4 +36,8 @@ if prime == None:
     prime_picker = random.randint(0,142)
     prime = primes_list[prime_picker]
 
-print(prime)
+
+primes.remove(prime)
+
+letter_a = random.randint(0,141)
+
