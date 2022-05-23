@@ -25,21 +25,22 @@ while prime == None:
         prime = None
 
 
-
-code = str(input(print("Please type your message. Leave one (1) space between each character, and disregard punctuation. ")
+code = str(input(print("Please type your message. Leave one (1) space between each character, and disregard punctuation. ")))
 code_list = code.split()
 
-i = 0 
+letter_count = 0 
 code_list.append("counter")
 while code_list[i] != "counter":
-    i = i + 1
+    letter_count = letter_count + 1
 code_list.remove("counter")
-print(code_list)
-print(i)
+letter_count = letter_count - 1
+
+code_number = 0
+place_value = letter_count
+
+for i in range (0, letter_count):
+    code_list[i] = code_list[i].lower()
+    if code_list[i] = "a":
+        counter = counter + 11 * 100 ** place_value
 
 
-
-
-
-
-                 
