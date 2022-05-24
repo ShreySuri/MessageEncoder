@@ -17,7 +17,7 @@ def factor(x):
 prime = None
 
 while prime == None:
-    prime = int(input(print("Please choose a prime number. ")))
+    prime = int(input(print("Please choose a prime number. For further protection, this prime should be greater than 10,000. ")))
     if factor(prime) == 2:
         prime = prime
     else:
@@ -33,13 +33,12 @@ while code_list[counter] != "placeholder":
     counter = counter + 1
 
 print("Your message has %s characters" % counter)
-code_list.remove("placeholder")
 
-counter = counter - 1
+counter = counter
 code_number = 0
-place_value = counter
+place_value = counter - 1
 
-for i in range (0, letter_count):
+for i in range (0, counter):
     code_list[i] = code_list[i].lower()
     if code_list[i] == "a":
         code_number = code_number + 11 * 100 ** place_value
@@ -93,10 +92,13 @@ for i in range (0, letter_count):
         code_number = code_number + 35 * 100 ** place_value
     elif code_list[i] == "z":
         code_number = code_number + 36 * 100 ** place_value
+    elif code_list[i] == "placeholder":
+        code_number = code_number + 37 * 100 ** place_value
     else:
         print("You have typed an unrecognized symbol. Please refresh the program, follow directions, and try again. ")
+        
     place_value = place_value - 1
 
-print(code_number)
+print(code_number * prime)
 
 
