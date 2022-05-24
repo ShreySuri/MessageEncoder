@@ -24,18 +24,20 @@ while prime == None:
         prime = None
 
 
+
 code = str(input(print("Please type your message. Leave one (1) space between each character, and disregard punctuation. ")))
 code_list = code.split()
+code_list.append("placeholder")
+counter = 0
+while code_list[counter] != "placeholder":
+    counter = counter + 1
 
-letter_count = 0 
-code_list.append("counter")
-while code_list[i] != "counter":
-    letter_count = letter_count + 1
-code_list.remove("counter")
-letter_count = letter_count - 1
+print("Your message has %s characters" % counter)
+code_list.remove("placeholder")
 
+counter = counter - 1
 code_number = 0
-place_value = letter_count
+place_value = counter
 
 for i in range (0, letter_count):
     code_list[i] = code_list[i].lower()
@@ -55,41 +57,41 @@ for i in range (0, letter_count):
         code_number = code_number + 17 * 100 ** place_value
     elif code_list[i] == "h":
         code_number = code_number + 18 * 100 ** place_value
-    elif code_list[i] = "i":
+    elif code_list[i] == "i":
         code_number = code_number + 19 * 100 ** place_value
-    elif code_list[i] = "j":
+    elif code_list[i] == "j":
         code_number = code_number + 20 * 100 ** place_value
-    elif code_list[i] = "k":
+    elif code_list[i] == "k":
         code_number = code_number + 20 * 100 ** place_value
-    elif code_list[i] = "l":
+    elif code_list[i] == "l":
         code_number = code_number + 22 * 100 ** place_value
-    elif code_list[i] = "m":
+    elif code_list[i] == "m":
         code_number = code_number + 23 * 100 ** place_value
-    elif code_list[i] = "n":
+    elif code_list[i] == "n":
         code_number = code_number + 24 * 100 ** place_value
-    elif code_list[i] = "o":
+    elif code_list[i] == "o":
         code_number = code_number + 25 * 100 ** place_value
-    elif code_list[i] = "p":
+    elif code_list[i] == "p":
         code_number = code_number + 26 * 100 ** place_value
-    elif code_list[i] = "q":
+    elif code_list[i] == "q":
         code_number = code_number + 27 * 100 ** place_value
-    elif code_list[i] = "r":
+    elif code_list[i] == "r":
         code_number = code_number + 28 * 100 ** place_value
-    elif code_list[i] = "s":
+    elif code_list[i] == "s":
         code_number = code_number + 29 * 100 ** place_value
-    elif code_list[i] = "t":
+    elif code_list[i] == "t":
         code_number = code_number + 30 * 100 ** place_value
-    elif code_list[i] = "u":
+    elif code_list[i] == "u":
         code_number = code_number + 31 * 100 ** place_value
-    elif code_list[i] = "v":
+    elif code_list[i] == "v":
         code_number = code_number + 32 * 100 ** place_value
-    elif code_list[i] = "w":
+    elif code_list[i] == "w":
         code_number = code_number + 33 * 100 ** place_value
-    elif code_list[i] = "x":
+    elif code_list[i] == "x":
         code_number = code_number + 34 * 100 ** place_value
-    elif code_list[i] = "y":
+    elif code_list[i] == "y":
         code_number = code_number + 35 * 100 ** place_value
-    elif code_list[i] = "z":
+    elif code_list[i] == "z":
         code_number = code_number + 36 * 100 ** place_value
     else:
         print("You have typed an unrecognized symbol. Please refresh the program, follow directions, and try again. ")
