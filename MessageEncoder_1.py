@@ -1,4 +1,3 @@
-import random
 import math
 
 def factor(x):
@@ -41,6 +40,58 @@ place_value = letter_count
 for i in range (0, letter_count):
     code_list[i] = code_list[i].lower()
     if code_list[i] = "a":
-        counter = counter + 11 * 100 ** place_value
+        code_number = codenumber + 11 * 100 ** place_value
+    elif code_list[i] = "b":
+        code_number = codenumber + 11 * 100 ** place_value
+    elif code_list[i] = "c":
+        code_number = codenumber + 11 * 100 ** place_value
+    elif code_list[i] = "d":
+        code_number = codenumber + 11 * 100 ** place_value
+    elif code_list[i] = "e":
+        code_number = codenumber + 11 * 100 ** place_value
+    elif code_list[i] = "f":
+        code_number = codenumber + 11 * 100 ** place_value
+    elif code_list[i] = "g":
+        code_number = codenumber + 11 * 100 ** place_value
+    elif code_list[i] = "h":
+        code_number = codenumber + 11 * 100 ** place_value
+    if code_list[i] = "i":
+        code_number = codenumber + 11 * 100 ** place_value
+    if code_list[i] = "j":
+        code_number = codenumber + 11 * 100 ** place_value
+    if code_list[i] = "k":
+        code_number = codenumber + 11 * 100 ** place_value
+    if code_list[i] = "l":
+        code_number = codenumber + 11 * 100 ** place_value
+    if code_list[i] = "m":
+        code_number = codenumber + 11 * 100 ** place_value
+    if code_list[i] = "n":
+        code_number = codenumber + 11 * 100 ** place_value
+    if code_list[i] = "o":
+        code_number = codenumber + 11 * 100 ** place_value
+    if code_list[i] = "p":
+        code_number = codenumber + 11 * 100 ** place_value
+    if code_list[i] = "q":
+        code_number = codenumber + 11 * 100 ** place_value
+    if code_list[i] = "r":
+        code_number = codenumber + 11 * 100 ** place_value
+    if code_list[i] = "s":
+        code_number = codenumber + 11 * 100 ** place_value
+    if code_list[i] = "t":
+        code_number = codenumber + 11 * 100 ** place_value
+    if code_list[i] = "u":
+        code_number = codenumber + 11 * 100 ** place_value
+    if code_list[i] = "v":
+        code_number = codenumber + 11 * 100 ** place_value
+    if code_list[i] = "w":
+        code_number = codenumber + 11 * 100 ** place_value
+    if code_list[i] = "x":
+        code_number = codenumber + 11 * 100 ** place_value
+    if code_list[i] = "y":
+        code_number = codenumber + 11 * 100 ** place_value
+    if code_list[i] = "z":
+        code_number = codenumber + 11 * 100 ** place_value
+
+
 
 
