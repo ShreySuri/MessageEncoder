@@ -37,7 +37,7 @@ while prime == None:
         prime = None
 
 print("")
-code = str(input(print("Please type your message. Leave one (1) space between each character, and disregard punctuation. ")))
+code = str(input(print("Please type your message. Leave one (1) space between each character. ")))
 code_list = code.split()
 code_list.append("placeholder")
 counter = 0
@@ -105,8 +105,16 @@ for i in range (0, counter):
         code_number = code_number + 35 * 100 ** place_value
     elif code_list[i] == "z":
         code_number = code_number + 36 * 100 ** place_value
-    elif code_list[i] == "placeholder":
+    elif code_list[i] == ".":
         code_number = code_number + 37 * 100 ** place_value
+    elif code_list[i] == ",":
+        code_number = code_number + 38 * 100 ** place_value
+    elif code_list[i] == "!":
+        code_number = code_number + 39 * 100 ** place_value
+    elif code_list[i] == "?":
+        code_number = code_number + 40 * 100 ** place_value
+    elif code_list[i] == "placeholder":
+        code_number = code_number + 99 * 100 ** place_value
     else:
         print("")
         print("You have typed an unrecognized symbol. Please refresh the program, follow directions, and try again. ")
@@ -116,6 +124,7 @@ for i in range (0, counter):
 composite = code_number * prime
 
 print("")
-print("Your code number is %s. Send this number to the recipient. Detailed instructions can be found on the README page" % composite)
+print("Your code number is %s. Send this number to the recipient." % composite)
+print("Detailed instructions can be found on the README page.")
 
 
