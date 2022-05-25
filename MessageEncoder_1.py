@@ -127,67 +127,70 @@ for i in range (0, counter):
     elif code_list[i] == "z":
         code_number = code_number + 46 * 100 ** place_value
 
-    elif code_list[i] == "a":
+    elif code_list[i] == "A":
         code_number = code_number + 47 * 100 ** place_value
-    elif code_list[i] == "b":
+    elif code_list[i] == "B":
         code_number = code_number + 48 * 100 ** place_value
-    elif code_list[i] == "c":
+    elif code_list[i] == "C":
         code_number = code_number + 49 * 100 ** place_value
-    elif code_list[i] == "d":
+    elif code_list[i] == "D":
         code_number = code_number + 50 * 100 ** place_value
-    elif code_list[i] == "e":
+    elif code_list[i] == "E":
         code_number = code_number + 51 * 100 ** place_value
-    elif code_list[i] == "f":
+    elif code_list[i] == "F":
         code_number = code_number + 52 * 100 ** place_value
-    elif code_list[i] == "g":
+    elif code_list[i] == "G":
         code_number = code_number + 53 * 100 ** place_value
-    elif code_list[i] == "h":
+    elif code_list[i] == "H":
         code_number = code_number + 54 * 100 ** place_value
-    elif code_list[i] == "i":
+    elif code_list[i] == "I":
         code_number = code_number + 55 * 100 ** place_value
-    elif code_list[i] == "j":
+    elif code_list[i] == "J":
         code_number = code_number + 56 * 100 ** place_value
-    elif code_list[i] == "k":
+    elif code_list[i] == "K":
         code_number = code_number + 57 * 100 ** place_value
-    elif code_list[i] == "l":
+    elif code_list[i] == "L":
         code_number = code_number + 58 * 100 ** place_value
-    elif code_list[i] == "m":
+    elif code_list[i] == "M":
         code_number = code_number + 59 * 100 ** place_value
-    elif code_list[i] == "n":
+    elif code_list[i] == "N":
         code_number = code_number + 60 * 100 ** place_value
-    elif code_list[i] == "o":
+    elif code_list[i] == "O":
         code_number = code_number + 61 * 100 ** place_value
-    elif code_list[i] == "p":
+    elif code_list[i] == "P":
         code_number = code_number + 62 * 100 ** place_value
-    elif code_list[i] == "q":
+    elif code_list[i] == "Q":
         code_number = code_number + 63 * 100 ** place_value
-    elif code_list[i] == "r":
+    elif code_list[i] == "R":
         code_number = code_number + 64 * 100 ** place_value
-    elif code_list[i] == "s":
+    elif code_list[i] == "S":
         code_number = code_number + 65 * 100 ** place_value
-    elif code_list[i] == "t":
-        code_number = code_number + 30 * 100 ** place_value
-    elif code_list[i] == "u":
-        code_number = code_number + 31 * 100 ** place_value
-    elif code_list[i] == "v":
-        code_number = code_number + 32 * 100 ** place_value
-    elif code_list[i] == "w":
-        code_number = code_number + 33 * 100 ** place_value
-    elif code_list[i] == "x":
-        code_number = code_number + 34 * 100 ** place_value
-    elif code_list[i] == "y":
-        code_number = code_number + 35 * 100 ** place_value
+    elif code_list[i] == "T":
+        code_number = code_number + 66 * 100 ** place_value
+    elif code_list[i] == "U":
+        code_number = code_number + 67 * 100 ** place_value
+    elif code_list[i] == "V":
+        code_number = code_number + 68 * 100 ** place_value
+    elif code_list[i] == "W":
+        code_number = code_number + 69 * 100 ** place_value
+    elif code_list[i] == "X":
+        code_number = code_number + 70 * 100 ** place_value
+    elif code_list[i] == "Y":
+        code_number = code_number + 71 * 100 ** place_value
     elif code_list[i] == "Z":
-        code_number = code_number + 61 * 100 ** place_value
+        code_number = code_number + 72 * 100 ** place_value
 
-    elif code_list[i] == ".":
-        code_number = code_number + 37 * 100 ** place_value
+    elif code_list[i] == "'":
+        code_number = code_number + 73 * 100 ** place_value
     elif code_list[i] == ",":
-        code_number = code_number + 38 * 100 ** place_value
+        code_number = code_number + 74 * 100 ** place_value
+    elif code_list[i] == ".":
+        code-number = code_number + 75 * 100 ** place_value
     elif code_list[i] == "!":
-        code_number = code_number + 39 * 100 ** place_value
+        code_number = code_number + 76 * 100 ** place_value
     elif code_list[i] == "?":
-        code_number = code_number + 40 * 100 ** place_value
+        code_number = code_number + 77 * 100 ** place_value
+
     elif code_list[i] == "placeholder":
         code_number = code_number + 99 * 100 ** place_value
     else:
