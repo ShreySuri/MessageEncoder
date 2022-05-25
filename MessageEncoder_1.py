@@ -1,4 +1,5 @@
 import math
+import random
 
 def factor(x):
     a = int(math.sqrt(x)) + 1
@@ -17,13 +18,21 @@ def factor(x):
 prime = None
 
 while prime == None:
-    prime = int(input(print("Please choose a prime number. For further protection, this prime should be greater than 10,000. ")))
-    if factor(prime) == 2:
+    prime = int(input(print("Please choose a prime number. For further protection, this prime should be greater than 10,000. If you would like a randomly generated prime, type '0'. ")))
+    if prime == 0:
+        prime_found = False
+        rand_int = random.randint(10000, 99900)
+        while prime_found == False:
+            if factor(rand_int) == 2:
+                prime = rand_int
+                prime_found = True
+                print(prime)
+            else:
+                rand_int = rand_int + 1
+    elif factor(prime) == 2:
         prime = prime
     else:
         prime = None
-
-
 
 code = str(input(print("Please type your message. Leave one (1) space between each character, and disregard punctuation. ")))
 code_list = code.split()
