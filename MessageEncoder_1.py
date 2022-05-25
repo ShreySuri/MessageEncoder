@@ -44,6 +44,7 @@ counter = 0
 while code_list[counter] != "placeholder":
     counter = counter + 1
 
+print("")
 print("Your message has %s characters" % counter)
 
 counter = counter
@@ -107,10 +108,14 @@ for i in range (0, counter):
     elif code_list[i] == "placeholder":
         code_number = code_number + 37 * 100 ** place_value
     else:
+        print("")
         print("You have typed an unrecognized symbol. Please refresh the program, follow directions, and try again. ")
         
     place_value = place_value - 1
 
-print(code_number * prime)
+composite = code_number * prime
+
+print("")
+print("Your code number is %s. Send this number to the recipient. Detailed instructions can be found on the README page" % composite)
 
 
