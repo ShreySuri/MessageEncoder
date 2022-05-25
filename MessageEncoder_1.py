@@ -18,7 +18,8 @@ def factor(x):
 prime = None
 
 while prime == None:
-    prime = int(input(print("Please choose a prime number. For further protection, this prime should be greater than 10,000. If you would like a randomly generated prime, type '0'. ")))
+    print("Please choose a prime number. For further protection, this prime should be greater than 10,000.")
+    prime = int(input(print("If you would like a randomly generated prime, please type '0'. ")))
     if prime == 0:
         prime_found = False
         rand_int = random.randint(10000, 99900)
