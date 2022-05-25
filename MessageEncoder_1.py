@@ -31,13 +31,14 @@ while prime == None:
                 print("Your prime is %s" % prime)
             else:
                 rand_int = rand_int + 1
-    elif factor(prime) == 2:
+    elif factor(prime) == 2 and prime > 10000:
         prime = prime
     else:
         prime = None
 
 print("")
-code = str(input(print("Please type your message. Leave one (1) space between each character. ")))
+print("Please type your message. Leave one (1) space between each character. ")
+code = input(print("Words can be denoted by using the '/' symbol. "))
 code_list = code.split()
 code_list.append("placeholder")
 counter = 0
@@ -184,12 +185,14 @@ for i in range (0, counter):
         code_number = code_number + 73 * 100 ** place_value
     elif code_list[i] == ",":
         code_number = code_number + 74 * 100 ** place_value
+    elif code_list[i] == "/":
+        code_number = code_number + 75 * 100 ** place_value
     elif code_list[i] == ".":
-        code-number = code_number + 75 * 100 ** place_value
-    elif code_list[i] == "!":
         code_number = code_number + 76 * 100 ** place_value
-    elif code_list[i] == "?":
+    elif code_list[i] == "!":
         code_number = code_number + 77 * 100 ** place_value
+    elif code_list[i] == "?":
+        code_number = code_number + 78 * 100 ** place_value
 
     elif code_list[i] == "placeholder":
         code_number = code_number + 99 * 100 ** place_value
