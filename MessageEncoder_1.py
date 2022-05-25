@@ -27,7 +27,8 @@ while prime == None:
             if factor(rand_int) == 2:
                 prime = rand_int
                 prime_found = True
-                print(prime)
+                print("")
+                print("Your prime is %s" % prime)
             else:
                 rand_int = rand_int + 1
     elif factor(prime) == 2:
@@ -35,6 +36,7 @@ while prime == None:
     else:
         prime = None
 
+print("")
 code = str(input(print("Please type your message. Leave one (1) space between each character, and disregard punctuation. ")))
 code_list = code.split()
 code_list.append("placeholder")
