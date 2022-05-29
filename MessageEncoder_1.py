@@ -38,7 +38,10 @@ while prime == None:
 
 print("")
 print("Please type your message. Leave one (1) space between each character. ")
-code = input(print("Words can be denoted by using the '/' symbol. "))
+code = input(print("Words can be denoted by using the '_' symbol. If you would like an example, type 'example'. "))
+if code = "example":
+    print("")
+    print("Ex. H e l l o _ W o r l d")
 code_list = code.split()
 code_list.append("placeholder")
 counter = 0
@@ -53,7 +56,6 @@ code_number = 0
 place_value = counter - 1
 
 for i in range (0, counter):
-    code_list[i] = code_list[i].lower()
     if code_list[i] == "0":
         code_number = code_number + 10 * 100 ** place_value
     elif code_list[i] == "1":
@@ -187,12 +189,18 @@ for i in range (0, counter):
         code_number = code_number + 74 * 100 ** place_value
     elif code_list[i] == "/":
         code_number = code_number + 75 * 100 ** place_value
-    elif code_list[i] == ".":
+     elif code_list[i] == "_":
         code_number = code_number + 76 * 100 ** place_value
-    elif code_list[i] == "!":
+    elif code_list[i] == ":"
         code_number = code_number + 77 * 100 ** place_value
-    elif code_list[i] == "?":
+    elif code_list[i] == ";":
         code_number = code_number + 78 * 100 ** place_value
+    elif code_list[i] == ".":
+        code_number = code_number + 79 * 100 ** place_value
+    elif code_list[i] == "!":
+        code_number = code_number + 80 * 100 ** place_value
+    elif code_list[i] == "?":
+        code_number = code_number + 81 * 100 ** place_value
 
     elif code_list[i] == "placeholder":
         code_number = code_number + 99 * 100 ** place_value
@@ -207,5 +215,6 @@ composite = code_number * prime
 print("")
 print("Your code number is %s. Send this number to the recipient." % composite)
 print("Detailed instructions can be found on the README page.")
+
 
 
