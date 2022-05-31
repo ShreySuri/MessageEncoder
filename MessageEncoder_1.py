@@ -39,7 +39,7 @@ while prime == None:
 print("")
 print("Please type your message. Leave one (1) space between each character. ")
 code = input(print("Words can be denoted by using the '_' symbol. If you would like an example, type 'example'. "))
-if code = "example":
+if code == "example":
     print("")
     print("Ex. H e l l o _ W o r l d")
 code_list = code.split()
@@ -189,9 +189,9 @@ for i in range (0, counter):
         code_number = code_number + 74 * 100 ** place_value
     elif code_list[i] == "/":
         code_number = code_number + 75 * 100 ** place_value
-     elif code_list[i] == "_":
+    elif code_list[i] == "_":
         code_number = code_number + 76 * 100 ** place_value
-    elif code_list[i] == ":"
+    elif code_list[i] == ":":
         code_number = code_number + 77 * 100 ** place_value
     elif code_list[i] == ";":
         code_number = code_number + 78 * 100 ** place_value
